@@ -3,7 +3,7 @@ WORKDIR := $(CURDIR)
 
 # list below your targets and their recipies
 all: inflation.pdf
-'README.md'
+	repro::use_make_publish()README.md
 
 data/raw/inflation.rds: R/download_inflation.R
 	Rscript -e "source('$<')"
