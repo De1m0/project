@@ -69,9 +69,3 @@ with(mtcars, plot(hp, mpg))
 
 
 
-```{python}
-print("Hi! Python here, do you miss R already?")
-```
-
-
-
