@@ -14,12 +14,14 @@ repro:
   data:
     - data/raw/inflation.rds
 ---
-
-```{r setup, include=FALSE}
+```{r}
 # use a function without loading the package
 # package::function
 usethis::use_git_config(user.name = "Hannes Diemerling",user.email = "hannes.diemerling@gmail.com",init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
+```
 
+
+```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = FALSE)
 repro::automate_load_packages()
