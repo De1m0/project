@@ -18,14 +18,14 @@ inflation <- inflation_raw %>%
     # coded according to "Additional Variables in Dataset" in excel file
     age = fct_recode(
       as.ordered(age),
-      `15-24` = "1",
-      `25-34` = "2",
-      `35-44` = "3",
-      `45-54` = "4",
-      `55-64` = "5",
-      `65+`   = "6",
-      `NA`    = "7",
-      `NA`    = "8"
+      `15-24` = "10",
+      `25-34` = "20",
+      `35-44` = "30",
+      `45-54` = "40",
+      `55-64` = "50",
+      `65+`   = "60",
+      `NA`    = "70",
+      `NA`    = "80"
     ),
     sex = fct_recode(
       as.factor(sex),

@@ -2,7 +2,7 @@ name: Create and publish the required Docker image
 
 on:
   push:
-    branches: ['master']
+    branches: ['main']
     paths:
       - Dockerfile
       - .github/workflows/push-container.yml

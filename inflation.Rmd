@@ -16,7 +16,7 @@ repro:
 ---
 ```{r setup, include=FALSE}
 
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 repro::automate_load_packages()
 repro::automate_load_scripts()
 ```
